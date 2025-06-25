@@ -11,7 +11,7 @@ Aplicación móvil híbrida desarrollada con Ionic, Angular y Capacitor.
 ## Requisitos previos
 
 - Node.js v18+ (recomendado v20)
-- Java JDK 17 para Android
+- Java JDK 21 para Android
 - Xcode 14+ para iOS
 - Android Studio para Android
 - Cocoapods para iOS
@@ -109,7 +109,7 @@ Los archivos generados se encontrarán en:
 
 ### Android
 
-El proyecto está configurado para usar Java 17 en lugar de Java 21 para mayor compatibilidad.
+El proyecto está configurado para usar Java 21.
 
 Archivos clave:
 - `android/app/build.gradle`: Configuración de compilación de Android
@@ -132,12 +132,12 @@ Archivos clave:
 
 Si encuentras errores relacionados con la versión de Java al compilar para Android, asegúrate de:
 
-1. Tener instalado Java JDK 17
+1. Tener instalado Java JDK 21
 2. Verificar que el archivo `android/app/capacitor.build.gradle` tenga configurado:
    ```gradle
    compileOptions {
-       sourceCompatibility JavaVersion.VERSION_17
-       targetCompatibility JavaVersion.VERSION_17
+       sourceCompatibility JavaVersion.VERSION_21
+       targetCompatibility JavaVersion.VERSION_21
    }
    ```
 
