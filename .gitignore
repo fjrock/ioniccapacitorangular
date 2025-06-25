@@ -28,6 +28,7 @@ log.txt
 /tmp
 /out-tsc
 /bazel-out
+/build
 
 # Node
 /node_modules
@@ -68,3 +69,56 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Binary files
+*.apk
+*.aab
+*.ipa
+*.exe
+*.dll
+*.so
+*.dylib
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+*.jar
+*.war
+*.ear
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Capacitor
+/ios/App/Pods
+/ios/App/public
+/ios/App/build
+/ios/App/App/public
+/ios/DerivedData
+/ios/xcuserdata
+/android/app/src/main/assets/public
+/android/.gradle
+/android/build
+/android/app/build
+/android/capacitor-cordova-android-plugins
+/android/app/release
+
+# Keystore files
+*.jks
+*.keystore
+!android/app/my-release-key.keystore
+
+# Certificates and provisioning profiles
+*.p12
+*.mobileprovision
+*.cer
+*.certSigningRequest
+*.cert
+
+# Generated files
+*.generated.swift
